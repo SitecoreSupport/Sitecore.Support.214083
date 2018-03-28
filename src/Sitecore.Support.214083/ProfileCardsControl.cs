@@ -1,6 +1,5 @@
 ﻿namespace Sitecore.Support.Shell.Applications.ContentEditor.Pipelines.RenderContentEditorHeader
 {
-
   using Sitecore.Data.Items;
   using Sitecore.Diagnostics;
   using Sitecore.Resources;
@@ -18,7 +17,7 @@
   using System.IO;
   using Telerik.Web.UI;
   
-  public class ProfileCardsControl: System.Web.UI.WebControls.WebControl
+  public class ProfileCardsControl: Sitecore.Shell.Applications.ContentEditor.Pipelines.RenderContentEditorHeader.ProfileCardsControl
   {
     public Item Item
     {
@@ -36,7 +35,7 @@
       RadToolTipManager radToolTipManager = new RadToolTipManager
       {
         Skin = "Metro",
-        ID = "ToolTipManager" + ((this.Item != null) ? this.Item.ID.ToShortID().ToString() : string.Empty),
+        ID = "ToolTipManager" + "110D559FDEA542EA9C1C8A5DF7E70EF9",
         CssClass = "scRadTooltipManager"
       };
 
